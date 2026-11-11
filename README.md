@@ -3,7 +3,9 @@
 Personal portfolio website showcasing **Data Analytics, MIS Reporting, Audit Operations, Process Automation**, and **live web reporting tools** built by **Deepak Kumar**.
 
 - **Live Website:** https://portfolio-deepak12.netlify.app/
-- **GitHub Repository:** https://github.com/Deepakkumar9548/my-portfolio
+- **GitHub Repositories:**
+  - Primary: https://github.com/Deepakkumar9548/my-portfolio
+  - Mirror: https://github.com/Deepakkumar9548/My_portfolio
 
 ---
 
@@ -19,9 +21,9 @@ Data Analytics and Business Operations professional with nearly 3 years of exper
   - *Executive Customer Service (On-boarding)* — IEnergizer (`June 2025 – 31 Oct 2025`)
   - *Business Development Associate* — Urban Company (`Mar 2024 – Mar 2025`)
 - **Skills & Expertise** — Categorized skill cards for *Advanced Excel*, *Data Analytics & SQL (MySQL)*, *Power BI & Visualization (DAX, Tableau)*, *Automation (Google Apps Script, Google Sheets)*, *AI Tools*, *Presentation & Reporting*, *Soft Skills*, and *Web Development*.
-- **Work Highlights & Projects** — Filterable showcase (`All`, `MIS & Audit Tools`, `Data, Workflow & Web Apps`) with custom preview graphics, live demo/repo links, and interactive case-study modals.
+- **Work Highlights & Projects** — Filterable showcase (`All`, `MIS & Audit Tools`, `Data, Workflow & Web Apps`) with custom preview graphics, clickable full-view image lightbox, live demo/repo links, and interactive case-study modals.
 - **Reports & Insights I Deliver** — 3-step reporting workflow, 6 core report deliverables, an **Interactive Tool Breakdown Explorer**, and an **Interactive Sample MIS Dashboard Preview** (illustrative demo data).
-- **Education, Languages & Resume** — Academic background (AKTU Lucknow / VCTM Aligarh), core stack, languages (*Hindi*, *English*), and embedded/downloadable PDF resume (`resume/Deepak-Resume.pdf`).
+- **Education, Languages & Resume** — Academic background (AKTU Lucknow / VCTM Aligarh), core stack, languages (*Hindi*, *English*), and embedded/downloadable 1-page PDF resume (`resume/Deepak-Resume.pdf`) updated with a **Key Projects** section.
 - **Contact Me** — Phone, WhatsApp (`+91 9548645750`), one-click Copy Email, Netlify Forms integration (`data-netlify="true"`), `mailto:` fallback, and direct **Send on WhatsApp** action.
 
 ---
@@ -36,6 +38,7 @@ Data Analytics and Business Operations professional with nearly 3 years of exper
 | **Data Cleaning Tool** | Web-based utility to standardize raw datasets and prepare analysis-ready data for MIS reporting | [Live Demo](https://datacleaning-tool.netlify.app/) | [GitHub](https://github.com/Deepakkumar9548/Data-Cleaning) |
 | **EBR Consolidate Tool** | Combines and organizes EBR datasets into a structured reporting view | [Live Demo](https://ebr-consolidate-tool.netlify.app/) | [GitHub](https://github.com/Deepakkumar9548/EBR-Consolidate-Tool) |
 | **Automated Google Sheets & PPT Workflows** | Google Sheets & Apps Script workflows for price lists, MIS summaries, and automated PPT reports | [Open Google Sheet](https://docs.google.com/spreadsheets/d/1tnLQ2Wfta2dnkbdS8GAkd81BRdyDZGx-iC4YAuDKxIM/edit?gid=817482066#gid=817482066) | Case Study in Portfolio |
+| **Portfolio Website** | Personal analytics & business operations portfolio featuring interactive dashboard previews, case studies, resume viewer, and contact workflows | [Live Demo](https://portfolio-deepak12.netlify.app/) | [GitHub](https://github.com/Deepakkumar9548/my-portfolio) |
 
 ---
 
@@ -51,6 +54,7 @@ Data Analytics and Business Operations professional with nearly 3 years of exper
   - Interactive Tool Breakdown tab switcher (`initToolBreakdowns`)
   - Interactive Sample MIS Dashboard preview (`initSampleDashboard`)
   - Accessible Case Study modal (`initCaseStudyModal`)
+  - Interactive project image lightbox with prev/next gallery navigation, live counter, and demo link (`initImageLightbox`)
   - Scroll progress bar, active nav tracking via `IntersectionObserver`, and Back-to-Top button (`initScrollFeatures`)
   - Contact form handling with Netlify Forms, `mailto:` fallback, Copy Email, and WhatsApp integration (`initContactForm`, `initCopyEmail`)
 
@@ -69,7 +73,7 @@ my-portfolio-main/
 │   ├── profile.jpg            # Profile headshot
 │   └── *.svg                  # Custom UI preview thumbnails for project cards
 └── resume/
-    └── Deepak-Resume.pdf      # Latest embedded & downloadable resume PDF
+    └── Deepak-Resume.pdf      # Latest 1-page resume PDF with Key Projects section
 ```
 
 ---
@@ -77,7 +81,7 @@ my-portfolio-main/
 ## Deployment Notes
 
 This is a static site with zero build step required:
-- **Netlify:** Connect `Deepakkumar9548/my-portfolio` (publish directory `.`). Enable **Forms → Enable form detection** in the Netlify dashboard to receive contact form submissions directly.
+- **Netlify (Git CI/CD or Manual Drop):** Connect `Deepakkumar9548/my-portfolio` (or `Deepakkumar9548/My_portfolio`) with publish directory `.`, or drag & drop the inner `my-portfolio-main/` folder (containing `index.html`, `resume/`, `images/`) in Netlify **Deploys**. Enable **Forms → Enable form detection** in the Netlify dashboard to receive contact form submissions directly.
 - **Local Preview:** Open `index.html` directly in a browser or run any static HTTP server (e.g., `python -m http.server`).
 
 ---
