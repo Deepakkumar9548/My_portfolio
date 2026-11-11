@@ -11,7 +11,7 @@
   <circle cx="56" cy="46" r="5" fill="#ef4444"/>
   <circle cx="74" cy="46" r="5" fill="#f59e0b"/>
   <circle cx="92" cy="46" r="5" fill="#10b981"/>
-  <text x="120" y="50" font-family="sans-serif" font-size="12" font-weight="700" fill="#ffcc00">Deepak.dev</text>
+  <text x="120" y="50" font-family="sans-serif" font-size="12" font-weight="700" fill="#ffcc00">Deepak.analytics</text>
   <text x="480" y="50" font-family="sans-serif" font-size="10" fill="#e5e7eb">Dark &amp; Light Mode</text>
   <!-- Hero block -->
   <rect x="54" y="82" width="532" height="114" rx="10" fill="#1e3c72"/>
