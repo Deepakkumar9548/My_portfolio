@@ -376,6 +376,8 @@ body.dark-mode .stat-item strong {
 
 .profile-pic {
   object-fit: cover;
+  object-position: center;
+  box-shadow: var(--shadow);
 }
 
 .profile-avatar {
