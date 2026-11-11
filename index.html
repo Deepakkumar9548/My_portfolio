@@ -1297,6 +1297,34 @@
     </div>
   </div>
 
+  <div id="image-lightbox" class="modal-backdrop lightbox-backdrop" role="dialog" aria-modal="true" aria-labelledby="lightbox-title" hidden>
+    <div class="modal-card lightbox-card">
+      <button type="button" id="lightbox-close" class="modal-close" aria-label="Close image preview">
+        <i class="fa-solid fa-xmark" aria-hidden="true"></i>
+      </button>
+      <div class="lightbox-media">
+        <img id="lightbox-img" src="" alt="" />
+      </div>
+      <div class="lightbox-meta">
+        <span id="lightbox-badge" class="project-badge"></span>
+        <h3 id="lightbox-title"></h3>
+        <p id="lightbox-desc" class="modal-summary"></p>
+      </div>
+      <div class="lightbox-footer">
+        <div class="lightbox-nav">
+          <button type="button" id="lightbox-prev" class="btn btn-secondary" aria-label="Previous project image">
+            <i class="fa-solid fa-chevron-left" aria-hidden="true"></i> Prev
+          </button>
+          <span id="lightbox-counter" class="lightbox-counter">1 / 9</span>
+          <button type="button" id="lightbox-next" class="btn btn-secondary" aria-label="Next project image">
+            Next <i class="fa-solid fa-chevron-right" aria-hidden="true"></i>
+          </button>
+        </div>
+        <a href="#" id="lightbox-live" class="btn" target="_blank" rel="noopener noreferrer" hidden>Open Live App</a>
+      </div>
+    </div>
+  </div>
+
   <button type="button" id="back-to-top" class="back-to-top" aria-label="Back to top">
     <i class="fa-solid fa-arrow-up" aria-hidden="true"></i>
   </button>

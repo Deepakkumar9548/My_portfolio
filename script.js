@@ -618,6 +618,111 @@ function initCaseStudyModal() {
   });
 }
 
+function initImageLightbox() {
+  const lightbox = document.getElementById("image-lightbox");
+  const imgEl = document.getElementById("lightbox-img");
+  const badgeEl = document.getElementById("lightbox-badge");
+  const titleEl = document.getElementById("lightbox-title");
+  const descEl = document.getElementById("lightbox-desc");
+  const counterEl = document.getElementById("lightbox-counter");
+  const liveLink = document.getElementById("lightbox-live");
+  const prevBtn = document.getElementById("lightbox-prev");
+  const nextBtn = document.getElementById("lightbox-next");
+  const closeBtn = document.getElementById("lightbox-close");
+  const cards = Array.from(document.querySelectorAll(".project-card"));
+  if (!lightbox || !imgEl || !cards.length) return;
+
+  let activeCards = [];
+  let activeIndex = 0;
+  let lastTrigger = null;
+
+  function renderSlide() {
+    const card = activeCards[activeIndex];
+    if (!card) return;
+
+    const thumb = card.querySelector(".project-thumb");
+    const badge = card.querySelector(".project-badge");
+    const title = card.querySelector("h3");
+    const desc = card.querySelector(".project-body > p");
+    const externalLink = card.querySelector('.project-links a[target="_blank"]');
+
+    if (thumb) {
+      imgEl.src = thumb.getAttribute("src") || "";
+      imgEl.alt = thumb.getAttribute("alt") || (title?.textContent ?? "Project preview");
+    }
+    if (badgeEl) badgeEl.textContent = badge?.textContent ?? "";
+    if (titleEl) titleEl.textContent = title?.textContent ?? "";
+    if (descEl) descEl.textContent = desc?.textContent ?? "";
+    if (counterEl) counterEl.textContent = `${activeIndex + 1} / ${activeCards.length}`;
+
+    if (liveLink) {
+      if (externalLink) {
+        liveLink.href = externalLink.href;
+        liveLink.textContent = externalLink.textContent.trim();
+        liveLink.hidden = false;
+      } else {
+        liveLink.hidden = true;
+      }
+    }
+  }
+
+  function openLightbox(triggerImg) {
+    activeCards = cards.filter((card) => !card.hidden && !card.classList.contains("is-hidden"));
+    const clickedCard = triggerImg.closest(".project-card");
+    activeIndex = Math.max(0, activeCards.indexOf(clickedCard));
+    lastTrigger = triggerImg;
+
+    renderSlide();
+    lightbox.hidden = false;
+    document.body.style.overflow = "hidden";
+    closeBtn?.focus();
+  }
+
+  function closeLightbox() {
+    lightbox.hidden = true;
+    document.body.style.overflow = "";
+    lastTrigger?.focus();
+  }
+
+  function stepSlide(delta) {
+    if (!activeCards.length) return;
+    activeIndex = (activeIndex + delta + activeCards.length) % activeCards.length;
+    renderSlide();
+  }
+
+  cards.forEach((card) => {
+    const thumb = card.querySelector(".project-thumb");
+    const title = card.querySelector("h3")?.textContent?.trim() || "project";
+    if (!thumb) return;
+
+    thumb.setAttribute("role", "button");
+    thumb.setAttribute("tabindex", "0");
+    thumb.setAttribute("aria-label", `Enlarge ${title} preview`);
+
+    thumb.addEventListener("click", () => openLightbox(thumb));
+    thumb.addEventListener("keydown", (event) => {
+      if (event.key === "Enter" || event.key === " ") {
+        event.preventDefault();
+        openLightbox(thumb);
+      }
+    });
+  });
+
+  prevBtn?.addEventListener("click", () => stepSlide(-1));
+  nextBtn?.addEventListener("click", () => stepSlide(1));
+  closeBtn?.addEventListener("click", closeLightbox);
+  lightbox.addEventListener("click", (event) => {
+    if (event.target === lightbox) closeLightbox();
+  });
+
+  document.addEventListener("keydown", (event) => {
+    if (lightbox.hidden) return;
+    if (event.key === "Escape") closeLightbox();
+    if (event.key === "ArrowLeft") stepSlide(-1);
+    if (event.key === "ArrowRight") stepSlide(1);
+  });
+}
+
 function initAOS() {
   if (typeof window.AOS === "undefined") return;
 
@@ -642,6 +747,7 @@ initProjectFilters();
 initToolBreakdowns();
 initSampleDashboard();
 initCaseStudyModal();
+initImageLightbox();
 initScrollFeatures();
 initCopyEmail();
 initContactForm();
