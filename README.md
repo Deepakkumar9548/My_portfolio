@@ -2,7 +2,7 @@
 
 Personal portfolio website showcasing **Data Analytics, MIS Reporting, Audit Operations, Process Automation**, and **live web reporting tools** built by **Deepak Kumar**.
 
-- **Live Website:** https://loquacious-speculoos-f0b1d3.netlify.app/
+- **Live Website:** https://portfolio-deepak12.netlify.app/
 - **GitHub Repository:** https://github.com/Deepakkumar9548/my-portfolio
 
 ---
