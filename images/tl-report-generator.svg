@@ -1,0 +1,66 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 360" width="640" height="360">
+  <defs>
+    <linearGradient id="bg1" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#0f172a"/>
+      <stop offset="100%" stop-color="#1e3a8a"/>
+    </linearGradient>
+  </defs>
+  <rect width="640" height="360" fill="url(#bg1)"/>
+  <rect x="28" y="24" width="584" height="312" rx="14" fill="#ffffff" opacity="0.98"/>
+  <rect x="28" y="24" width="584" height="58" rx="14" fill="#f8fafc"/>
+  <rect x="28" y="68" width="584" height="14" fill="#f8fafc"/>
+  <rect x="44" y="38" width="32" height="32" rx="8" fill="#1e3c72"/>
+  <text x="60" y="59" text-anchor="middle" font-family="sans-serif" font-size="14" font-weight="bold" fill="#ffcc00">TL</text>
+  <text x="88" y="50" font-family="sans-serif" font-size="15" font-weight="700" fill="#0f172a">Daily TL Report Generator</text>
+  <text x="88" y="67" font-family="sans-serif" font-size="10.5" fill="#64748b">Mapping · Payment verification · Row data, generated automatically</text>
+  <line x1="28" y1="82" x2="612" y2="82" stroke="#e2e8f0" stroke-width="1"/>
+  <!-- Module tabs -->
+  <rect x="44" y="92" width="70" height="22" rx="6" fill="#f1f5f9"/>
+  <text x="79" y="106" text-anchor="middle" font-family="sans-serif" font-size="9.5" fill="#475569">Dashboard</text>
+  <rect x="120" y="92" width="106" height="22" rx="6" fill="#dcfce7" stroke="#16a34a" stroke-width="1"/>
+  <text x="173" y="106" text-anchor="middle" font-family="sans-serif" font-size="9.5" font-weight="700" fill="#15803d">Payment verification</text>
+  <rect x="232" y="92" width="84" height="22" rx="6" fill="#f1f5f9"/>
+  <text x="274" y="106" text-anchor="middle" font-family="sans-serif" font-size="9.5" fill="#475569">Monthly orders</text>
+  <rect x="322" y="92" width="64" height="22" rx="6" fill="#fef3c7"/>
+  <text x="354" y="106" text-anchor="middle" font-family="sans-serif" font-size="9.5" fill="#92400e">Sent back</text>
+  <rect x="392" y="92" width="76" height="22" rx="6" fill="#f1f5f9"/>
+  <text x="430" y="106" text-anchor="middle" font-family="sans-serif" font-size="9.5" fill="#475569">Data explorer</text>
+  <rect x="474" y="92" width="74" height="22" rx="6" fill="#f1f5f9"/>
+  <text x="511" y="106" text-anchor="middle" font-family="sans-serif" font-size="9.5" fill="#475569">PC File Status</text>
+  <rect x="554" y="92" width="44" height="22" rx="6" fill="#f1f5f9"/>
+  <text x="576" y="106" text-anchor="middle" font-family="sans-serif" font-size="9.5" fill="#475569">History</text>
+  <!-- KPI Row -->
+  <rect x="44" y="128" width="128" height="60" rx="10" fill="#eff6ff" stroke="#bfdbfe"/>
+  <text x="56" y="148" font-family="sans-serif" font-size="9" font-weight="600" fill="#1d4ed8">MAPPED ROWS</text>
+  <text x="56" y="174" font-family="sans-serif" font-size="20" font-weight="700" fill="#0f172a">Auto Sync</text>
+  <rect x="184" y="128" width="128" height="60" rx="10" fill="#ecfdf5" stroke="#a7f3d0"/>
+  <text x="196" y="148" font-family="sans-serif" font-size="9" font-weight="600" fill="#047857">PAYMENT CHECK</text>
+  <text x="196" y="174" font-family="sans-serif" font-size="20" font-weight="700" fill="#0f172a">Verified</text>
+  <rect x="324" y="128" width="128" height="60" rx="10" fill="#fffbeb" stroke="#fde68a"/>
+  <text x="336" y="148" font-family="sans-serif" font-size="9" font-weight="600" fill="#b45309">SENT BACK</text>
+  <text x="336" y="174" font-family="sans-serif" font-size="20" font-weight="700" fill="#0f172a">Flagged</text>
+  <rect x="464" y="128" width="134" height="60" rx="10" fill="#f5f3ff" stroke="#ddd6fe"/>
+  <text x="476" y="148" font-family="sans-serif" font-size="9" font-weight="600" fill="#6d28d9">PC FILE STATUS</text>
+  <text x="476" y="174" font-family="sans-serif" font-size="20" font-weight="700" fill="#0f172a">Tracked</text>
+  <!-- Table preview -->
+  <rect x="44" y="202" width="554" height="118" rx="10" fill="#f8fafc" stroke="#e2e8f0"/>
+  <rect x="44" y="202" width="554" height="28" rx="10" fill="#1e293b"/>
+  <text x="60" y="220" font-family="sans-serif" font-size="10" font-weight="600" fill="#ffffff">Order Ref</text>
+  <text x="170" y="220" font-family="sans-serif" font-size="10" font-weight="600" fill="#ffffff">Mapping Status</text>
+  <text x="315" y="220" font-family="sans-serif" font-size="10" font-weight="600" fill="#ffffff">Payment Verification</text>
+  <text x="480" y="220" font-family="sans-serif" font-size="10" font-weight="600" fill="#ffffff">PC File Status</text>
+  <line x1="44" y1="260" x2="598" y2="260" stroke="#e2e8f0"/>
+  <line x1="44" y1="290" x2="598" y2="290" stroke="#e2e8f0"/>
+  <rect x="60" y="240" width="68" height="10" rx="5" fill="#cbd5e1"/>
+  <rect x="170" y="238" width="64" height="14" rx="7" fill="#dbeafe"/>
+  <rect x="315" y="238" width="76" height="14" rx="7" fill="#dcfce7"/>
+  <rect x="480" y="240" width="70" height="10" rx="5" fill="#cbd5e1"/>
+  <rect x="60" y="270" width="84" height="10" rx="5" fill="#cbd5e1"/>
+  <rect x="170" y="268" width="74" height="14" rx="7" fill="#dbeafe"/>
+  <rect x="315" y="268" width="68" height="14" rx="7" fill="#fef3c7"/>
+  <rect x="480" y="270" width="64" height="10" rx="5" fill="#cbd5e1"/>
+  <rect x="60" y="300" width="74" height="10" rx="5" fill="#cbd5e1"/>
+  <rect x="170" y="298" width="64" height="14" rx="7" fill="#dcfce7"/>
+  <rect x="315" y="298" width="76" height="14" rx="7" fill="#dcfce7"/>
+  <rect x="480" y="300" width="82" height="10" rx="5" fill="#cbd5e1"/>
+</svg>

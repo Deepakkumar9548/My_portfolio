@@ -2,289 +2,1304 @@
 <html lang="en">
 
 <head>
-  <meta name="description" content="Deepak Kumar - Full Stack Developer Portfolio">
-<meta name="keywords" content="Deepak, Kumar, portfolio, web developer, full stack, React, Node.js">
-<meta name="author" content="Deepak Kumar">
-<!-- <meta name="viewport" content="width=device-width, initial-scale=1.0"> -->
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Deepak Kumar | Portfolio</title>
-  <link rel="stylesheet" href="style.css" />
-  <script defer src="script.js"></script>
+  <meta name="description" content="Deepak Kumar - Data Analytics & Business Operations Professional | MIS Reporting, Advanced Excel, SQL (MySQL), Power BI, Tableau, Google Sheets Automation" />
+  <meta name="keywords" content="Deepak Kumar, Data Analyst, Business Operations, MIS Reporting, Audit Operations, Advanced Excel, SQL, MySQL, Power BI, DAX, Tableau, Google Apps Script, Google Sheets Automation, RCA" />
+  <meta name="author" content="Deepak Kumar" />
+  <meta name="theme-color" content="#1e3c72" />
+  <meta property="og:type" content="website" />
+  <meta property="og:title" content="Deepak Kumar | Data Analytics &amp; Business Operations" />
+  <meta property="og:description" content="MIS Reporting, Audit Operations, Power BI, SQL (MySQL), Advanced Excel, and Google Sheets Automation portfolio with live reporting tools." />
+  <meta name="twitter:card" content="summary" />
+  <meta name="twitter:title" content="Deepak Kumar | Data Analytics &amp; Business Operations" />
+  <meta name="twitter:description" content="MIS Reporting, Audit Operations, Power BI, SQL, Advanced Excel &amp; Automation portfolio." />
+  <title>Deepak Kumar | Data Analytics &amp; Business Operations</title>
+
+  <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><rect width='100' height='100' rx='20' fill='%231e3c72'/><text x='50%25' y='55%25' dominant-baseline='middle' text-anchor='middle' font-family='sans-serif' font-size='48' font-weight='bold' fill='%23ffcc00'>DK</text></svg>" />
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" />
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
-  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;500;700&display=swap" rel="stylesheet">
-  <link rel="icon" href="favicon.ico" type="image/x-icon">
-  <link rel="apple-touch-icon" href="apple-touch-icon.png" sizes="180x180">
-  <link rel="icon" href="favicon-32x32.png" sizes="32x32" type="image/png">
-  <link rel="icon" href="favicon-16x16.png" sizes="16x16" type="image/png">
-  <link rel="manifest" href="site.webmanifest">
-  <link rel="mask-icon" href="safari-pinned-tab.svg" color="#5bbad5">
-  <meta name="theme-color" content="#ffffff">
-<!-- AOS CSS -->
-<link href="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.css" rel="stylesheet" />
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.css" />
+  <link rel="stylesheet" href="style.css" />
+
+  <script defer src="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.js"></script>
+  <script defer src="script.js"></script>
 </head>
 
 <body>
-  <!-- ✅ NAVIGATION BAR -->
   <header>
+    <div id="scroll-progress" class="scroll-progress" aria-hidden="true"></div>
     <div class="nav-container">
-      <h1 class="logo">Deepak.dev</h1>
-      <nav>
-        <ul class="nav-links">
+      <a href="#hero" class="logo">Deepak.dev</a>
+
+      <nav aria-label="Primary Navigation">
+        <ul id="nav-links" class="nav-links">
           <li><a href="#hero">Home</a></li>
           <li><a href="#about">About</a></li>
+          <li><a href="#experience">Experience</a></li>
           <li><a href="#skills">Skills</a></li>
-          <li><a href="#projects">Projects</a></li>
+          <li><a href="#projects">Work</a></li>
+          <li><a href="#reports">Reports</a></li>
           <li><a href="#resume">Resume</a></li>
-          <li><a href="#tools">Tools I Use</a></li>
           <li><a href="#contact">Contact</a></li>
-          <li><a href="#testimonials">Testimonials</a></li>
-          <li><a><button id="dark-mode-toggle" class="btn">🌙 </button></a></li>
         </ul>
-        <!-- <button id="dark-mode-toggle" class="btn">🌙 </button> -->
       </nav>
+
+      <div class="nav-actions">
+        <button
+          type="button"
+          id="dark-mode-toggle"
+          class="btn btn-toggle"
+          aria-label="Switch to dark mode"
+          aria-pressed="false"
+        >
+          🌙 Dark
+        </button>
+        <button
+          type="button"
+          id="menu-toggle"
+          class="menu-toggle"
+          aria-label="Open navigation menu"
+          aria-expanded="false"
+          aria-controls="nav-links"
+        >
+          <i class="fa-solid fa-bars" aria-hidden="true"></i>
+        </button>
+      </div>
     </div>
   </header>
 
-  <!-- ✅ HERO SECTION -->
-  <section id="hero" class="hero">
-    <div class="container">
-      <h1>Hi, I'm <span class="highlight">Deepak Kumar</span></h1>
-      <h2><span id="typed-text"></span></h2>
-      <p>I build full-stack web apps that are scalable, clean, and modern.</p>
-      <div class="cta-buttons">
-        <a href="#contact" class="btn">Contact Me</a>
-        <a href="resume/Deepak-Resume.pdf" class="btn" download>Download Resume</a>
-      </div>
-      
-    </div>
-  </section>
-
-  <!-- ✅ ABOUT SECTION -->
-  <section id="about">
-    <div class="container">
-      <h2>About Me</h2>
-      <div class="about-content">
-        <img src="images/profile.jpg" alt="Deepak's photo" class="profile-pic">
+  <main>
+    <section id="hero" class="hero">
+      <div class="container">
+        <span class="hero-badge"><i class="fa-solid fa-chart-line" aria-hidden="true"></i> Data Analytics • MIS Automation • Audit Operations</span>
+        <h1>Hi, I'm <span class="highlight">Deepak Kumar</span></h1>
+        <h2 class="typing-heading"><span id="typed-text"></span></h2>
         <p>
-          I'm a passionate full-stack developer with experience in building responsive and scalable web applications.
-          I’ve worked on projects like e-commerce sites, portfolio sites, and clone apps (RedBus, Gmail, YouTube). I
-          enjoy learning new technologies and solving real-world problems through code.
+          Data Analytics and Business Operations professional with nearly 3 years of experience in MIS Reporting,
+          Data Analysis, Audit Operations, Power BI, SQL, Advanced Excel, and Google Sheets Automation.
         </p>
+        <div class="cta-buttons">
+          <a href="#contact" class="btn">Contact Me</a>
+          <a href="#experience" class="btn btn-outline">View Experience</a>
+          <a href="resume/Deepak-Resume.pdf" class="btn btn-outline" download>Download Resume</a>
+        </div>
+        <div class="hero-socials" aria-label="Quick contact links">
+          <a href="https://github.com/Deepakkumar9548" target="_blank" rel="noopener noreferrer" aria-label="GitHub profile">
+            <i class="fa-brands fa-github" aria-hidden="true"></i> GitHub
+          </a>
+          <a href="https://www.linkedin.com/in/deepak-kumar9548/" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn profile">
+            <i class="fa-brands fa-linkedin-in" aria-hidden="true"></i> LinkedIn
+          </a>
+          <a href="mailto:deepakchaudhary954864@gmail.com" aria-label="Email Deepak Kumar">
+            <i class="fa-solid fa-envelope" aria-hidden="true"></i> Email
+          </a>
+          <a href="tel:9548645750" aria-label="Call Deepak Kumar">
+            <i class="fa-solid fa-phone" aria-hidden="true"></i> 9548645750
+          </a>
+          <a href="https://wa.me/919548645750?text=Hi%20Deepak%2C%20I%20visited%20your%20portfolio%20and%20would%20like%20to%20connect." target="_blank" rel="noopener noreferrer" aria-label="Chat with Deepak Kumar on WhatsApp">
+            <i class="fa-brands fa-whatsapp" aria-hidden="true"></i> WhatsApp
+          </a>
+        </div>
       </div>
-    </div>
-  </section>
+    </section>
 
-  <!-- ✅ SKILLS SECTION -->
-  <section id="skills">
-    <div class="container">
-      <h2>My Skills</h2>
-      <div class="skills-grid">
-        <div class="skill-card">HTML</div>
-        <div class="skill-card">CSS</div>
-        <div class="skill-card">JavaScript</div>
-        <div class="skill-card">React.js</div>
-        <div class="skill-card">Node.js</div>
-        <div class="skill-card">MySQL</div>
-        <div class="skill-card">Git & GitHub</div>
-        <div class="skill-card">Bootstrap / Tailwind</div>
+    <section id="about" data-aos="fade-up">
+      <div class="container">
+        <h2>About Me</h2>
+        <div class="about-content">
+          <!-- Replace .profile-avatar with <img src="images/profile.jpg" alt="Deepak Kumar" class="profile-pic"> when photo is added -->
+          <div class="profile-avatar" aria-label="Deepak Kumar avatar">
+            <span>DK</span>
+          </div>
+          <div class="about-text">
+            <p>
+              I'm a Data Analytics and Business Operations professional with nearly 3 years of experience in MIS Reporting,
+              Data Analysis, Audit Operations, and Business Process Improvement. Proficient in Advanced Excel, SQL (MySQL),
+              Power BI, and Google Sheets Automation, I specialize in Dashboard Development, KPI Monitoring, Data Auditing,
+              Root Cause Analysis (RCA), and transforming complex data into actionable insights—alongside building
+              responsive web applications.
+            </p>
+            <div class="impact-stats" aria-label="Career highlights">
+              <div class="stat-item">
+                <strong>~3 Years</strong>
+                <span>Analytics &amp; Operations</span>
+              </div>
+              <div class="stat-item">
+                <strong>Team Lead</strong>
+                <span>Audit &amp; MIS Operations</span>
+              </div>
+              <div class="stat-item">
+                <strong>3/Day</strong>
+                <span>Walk-in Onboarding Target</span>
+              </div>
+            </div>
+          </div>
+        </div>
       </div>
-    </div>
-  </section>
+    </section>
 
-  <!-- ✅ PROJECTS SECTION -->
-  <section id="projects">
-    <div class="container">
-      <h2>My Projects</h2>
-      <div class="projects-grid">
+    <section id="experience" data-aos="fade-up">
+      <div class="container">
+        <h2>Professional Experience</h2>
+        <div class="experience-timeline">
 
-        <div class="project-card">
-          <img src="images/ecommerce.png" alt="E-Commerce Project">
-          <h3>E-Commerce Website</h3>
-          <p>Responsive e-commerce app with product listings and cart feature using React & Node.js.</p>
-          <div class="project-links">
-            <a href="https://your-live-link.com" target="_blank" class="btn">Live Demo</a>
-            <a href="https://github.com/your-github/ecommerce" target="_blank" class="btn">GitHub</a>
+          <article class="experience-card">
+            <div class="experience-header">
+              <div>
+                <h3>Team Lead &amp; Auditor</h3>
+                <p class="experience-company">AVA Global Alliance</p>
+              </div>
+              <span class="experience-date">1 Nov 2025 – Present</span>
+            </div>
+            <ul class="experience-bullets">
+              <li>Managed Sales &amp; After-Sales audit operations covering dealership processes, inventory verification, sales performance, discount leakage, and commission calculations.</li>
+              <li>Led and coordinated the audit team—assigning tasks, monitoring daily performance, and ensuring process compliance, data accuracy, and timely audit completion.</li>
+              <li>Performed data auditing, analysis, and discrepancy identification using Advanced Excel and SQL to strengthen audit controls and improve operational efficiency.</li>
+              <li>Developed and implemented Google Sheets automation to streamline business workflows, reduce manual effort, and improve data accuracy.</li>
+              <li>Built and maintained automated reporting dashboards and MIS reports using Google Sheets, Excel, and Power BI for performance monitoring and management reporting.</li>
+              <li>Prepared executive PPT management reports, audit summaries, and analytical presentations while maintaining accurate project price lists.</li>
+            </ul>
+          </article>
+
+          <article class="experience-card">
+            <div class="experience-header">
+              <div>
+                <h3>Executive Customer Service (On-boarding)</h3>
+                <p class="experience-company">IEnergizer <span class="experience-category">• Category: Carpenter – Wall Panels &amp; PVC Panels</span></p>
+              </div>
+              <span class="experience-date">June 2025 – 31 Oct 2025</span>
+            </div>
+            <ul class="experience-bullets">
+              <li>Managed customer onboarding and carpenter coordination for Wall &amp; PVC Panel installations.</li>
+              <li>Conducted NPS Management Audits to review service quality, customer satisfaction, and process compliance.</li>
+              <li>Coordinated installations, materials, manpower, and logistics to ensure timely project delivery.</li>
+              <li>Achieved a daily target of 3 office walk-in onboardings while handling customer follow-ups and resolving service-related issues.</li>
+            </ul>
+          </article>
+
+          <article class="experience-card">
+            <div class="experience-header">
+              <div>
+                <h3>Business Development Associate</h3>
+                <p class="experience-company">Urban Company <span class="experience-category">• Category: RO Water Purifier</span></p>
+              </div>
+              <span class="experience-date">Mar 2024 – Mar 2025</span>
+            </div>
+            <ul class="experience-bullets">
+              <li>Managed customer escalations related to RO water purifiers, prioritizing urgent requests and arranging early installations for timely resolution.</li>
+              <li>Coordinated and scheduled product installations with service partners and field teams to ensure smooth execution and minimal delays.</li>
+              <li>Monitored daily operational activities, installation status, and pending cases to maintain smooth workflow.</li>
+              <li>Maintained operational records and supported daily MIS reporting and coordination activities.</li>
+            </ul>
+          </article>
+
+        </div>
+      </div>
+    </section>
+
+    <section id="skills" data-aos="fade-up">
+      <div class="container">
+        <h2>Skills &amp; Expertise</h2>
+        <div class="skill-categories-grid">
+
+          <article class="skill-category-card">
+            <h3><i class="fa-solid fa-file-excel" aria-hidden="true"></i> Advanced Excel</h3>
+            <div class="skill-pills">
+              <span>Pivot Tables</span>
+              <span>Advanced Formulas</span>
+              <span>Data Cleaning</span>
+              <span>Data Analysis</span>
+            </div>
+          </article>
+
+          <article class="skill-category-card">
+            <h3><i class="fa-solid fa-database" aria-hidden="true"></i> Data Analytics</h3>
+            <div class="skill-pills">
+              <span>SQL (MySQL)</span>
+              <span>MIS Reporting</span>
+              <span>Business Analytics</span>
+              <span>KPI Tracking</span>
+              <span>Root Cause Analysis (RCA)</span>
+            </div>
+          </article>
+
+          <article class="skill-category-card">
+            <h3><i class="fa-solid fa-chart-pie" aria-hidden="true"></i> Power BI &amp; Visualization</h3>
+            <div class="skill-pills">
+              <span>Dashboard Development</span>
+              <span>DAX</span>
+              <span>Data Modeling</span>
+              <span>Data Visualization</span>
+              <span>Tableau</span>
+            </div>
+          </article>
+
+          <article class="skill-category-card">
+            <h3><i class="fa-solid fa-gears" aria-hidden="true"></i> Automation</h3>
+            <div class="skill-pills">
+              <span>Google Apps Script</span>
+              <span>Google Sheets</span>
+              <span>Automated PPT Generation</span>
+              <span>Automated MIS Reports</span>
+            </div>
+          </article>
+
+          <article class="skill-category-card">
+            <h3><i class="fa-solid fa-robot" aria-hidden="true"></i> AI Tools</h3>
+            <div class="skill-pills">
+              <span>ChatGPT</span>
+              <span>Claude AI</span>
+              <span>Google Gemini</span>
+              <span>Microsoft Copilot</span>
+              <span>Perplexity</span>
+              <span>Prompt Engineering</span>
+            </div>
+          </article>
+
+          <article class="skill-category-card">
+            <h3><i class="fa-solid fa-file-powerpoint" aria-hidden="true"></i> Presentation &amp; Reporting</h3>
+            <div class="skill-pills">
+              <span>PowerPoint</span>
+              <span>Executive Reporting</span>
+              <span>Business Dashboards</span>
+              <span>Management Reports</span>
+            </div>
+          </article>
+
+          <article class="skill-category-card">
+            <h3><i class="fa-solid fa-users" aria-hidden="true"></i> Soft Skills</h3>
+            <div class="skill-pills">
+              <span>Analytical Thinking</span>
+              <span>Problem Solving</span>
+              <span>Team Collaboration</span>
+              <span>Communication</span>
+              <span>Team Leadership</span>
+              <span>Project Management</span>
+            </div>
+          </article>
+
+          <article class="skill-category-card">
+            <h3><i class="fa-solid fa-code" aria-hidden="true"></i> Web Development</h3>
+            <div class="skill-pills">
+              <span>HTML &amp; CSS</span>
+              <span>JavaScript</span>
+              <span>React.js</span>
+              <span>Node.js</span>
+              <span>Git &amp; GitHub</span>
+            </div>
+          </article>
+
+        </div>
+      </div>
+    </section>
+
+    <section id="projects" data-aos="fade-up">
+      <div class="container">
+        <h2>Work Highlights &amp; Projects</h2>
+
+        <div class="project-filters" role="group" aria-label="Filter projects by category">
+          <button type="button" class="filter-btn is-active" data-filter="all" aria-pressed="true">All</button>
+          <button type="button" class="filter-btn" data-filter="reporting" aria-pressed="false">MIS &amp; Audit Tools</button>
+          <button type="button" class="filter-btn" data-filter="workflow" aria-pressed="false">Data, Workflow &amp; Web Apps</button>
+        </div>
+        <p id="project-filter-status" class="filter-status" aria-live="polite"></p>
+
+        <div class="projects-grid">
+
+          <!-- Tip: You can swap any <img> below with a real screenshot or <video class="project-thumb" src="videos/demo.mp4" controls muted loop playsinline></video> -->
+          <article class="project-card" data-category="reporting">
+            <img
+              src="images/tl-report-generator.svg"
+              alt="Daily TL Report Generator interface preview showing Dashboard, Payment verification, Monthly orders, and Data explorer modules"
+              class="project-thumb"
+              loading="lazy"
+            />
+            <div class="project-body">
+              <span class="project-badge">Featured • Reporting Automation</span>
+              <h3>Daily TL Report Generator</h3>
+              <p>
+                Automated Team Lead reporting web app (Mapping · Payment verification · Row data, generated automatically)
+                featuring Dashboard, Payment verification, Monthly orders, Sent back, Data explorer, PC File Status, and
+                History modules.
+              </p>
+              <div class="project-tags">
+                <span>Mapping</span>
+                <span>Payment Verification</span>
+                <span>Monthly Orders</span>
+                <span>Data Explorer</span>
+              </div>
+              <div class="project-links">
+                <a
+                  href="https://tl-report-autogenerator.netlify.app/"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  class="btn"
+                >
+                  Live Demo
+                </a>
+                <a
+                  href="https://github.com/Deepakkumar9548/TL_Report_Generator_"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  class="btn btn-secondary"
+                >
+                  GitHub
+                </a>
+                <a href="#tl-report-breakdown" class="btn btn-secondary">
+                  Modules Explained
+                </a>
+              </div>
+            </div>
+          </article>
+
+          <article class="project-card" data-category="workflow">
+            <img
+              src="images/ndc-portal.svg"
+              alt="Business Workflow NDC Portal India preview showing 6-step form and Part A / Part B billing auto-calculation"
+              class="project-thumb"
+              loading="lazy"
+            />
+            <div class="project-body">
+              <span class="project-badge">Featured • No Dues Certificate Portal</span>
+              <h3>Business Workflow NDC Portal (India)</h3>
+              <p>
+                No Dues Certificate cum Customer Confirmation portal for franchise dealerships—featuring a 6-step
+                validated form, live Part A (OEM) &amp; Part B (Dealer) billing calculations, conditional
+                Exchange/Finance rules, Excel import/export, and an All NDC Records KPI dashboard.
+              </p>
+              <div class="project-tags">
+                <span>No Dues Certificate</span>
+                <span>Billing Auto-Calc</span>
+                <span>Excel Import/Export</span>
+                <span>Records KPI</span>
+              </div>
+              <div class="project-links">
+                <a
+                  href="https://business-workflow-ndc-portal-india.netlify.app/"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  class="btn"
+                >
+                  Live Demo
+                </a>
+                <a
+                  href="https://github.com/Deepakkumar9548/Business-Workflow-NDC-Portal-india"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  class="btn btn-secondary"
+                >
+                  GitHub
+                </a>
+                <a href="#ndc-portal-breakdown" class="btn btn-secondary">
+                  Modules Explained
+                </a>
+              </div>
+            </div>
+          </article>
+
+          <article class="project-card" data-category="reporting">
+            <img
+              src="images/daily-mis-tool.svg"
+              alt="Daily MIS & Weekly Report Tool preview showing 12 audit modules, TL scorecards, and pivot analysis"
+              class="project-thumb"
+              loading="lazy"
+            />
+            <div class="project-body">
+              <span class="project-badge">Featured • MIS &amp; Audit Tool</span>
+              <h3>Daily MIS &amp; Weekly Report Tool</h3>
+              <p>
+                Dealership audit and MIS reporting web app featuring Extractor, Auto Audit, TL Performance, Analysis,
+                Reconciliation, Free Pivot, Dealership Report, Dashboard, Keyword Extractor, File Merger, Monthly
+                Working, and OEM Comparison modules.
+              </p>
+              <div class="project-tags">
+                <span>MIS Reporting</span>
+                <span>Auto Audit</span>
+                <span>Pivot &amp; Reconciliation</span>
+                <span>ExcelJS / XLSX</span>
+              </div>
+              <div class="project-links">
+                <a
+                  href="https://daily-mis-report.netlify.app/"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  class="btn"
+                >
+                  Live Demo
+                </a>
+                <a
+                  href="https://github.com/Deepakkumar9548/Weekly-Repot-Tool"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  class="btn btn-secondary"
+                >
+                  GitHub
+                </a>
+                <a href="#mis-tool-breakdown" class="btn btn-secondary">
+                  Modules Explained
+                </a>
+              </div>
+            </div>
+          </article>
+
+          <article class="project-card" data-category="workflow">
+            <img
+              src="images/data-cleaning.svg"
+              alt="Data Cleaning Tool preview showing raw messy data transformed into clean MIS-ready records"
+              class="project-thumb"
+              loading="lazy"
+            />
+            <div class="project-body">
+              <span class="project-badge">Featured • Data Preparation</span>
+              <h3>Data Cleaning Tool</h3>
+              <p>
+                Web-based data cleaning utility built to standardize raw datasets, clean inconsistent entries, and
+                prepare structured data faster for MIS reporting and analysis.
+              </p>
+              <div class="project-tags">
+                <span>Data Cleaning</span>
+                <span>Data Preparation</span>
+                <span>Web App</span>
+              </div>
+              <div class="project-links">
+                <a
+                  href="https://datacleaning-tool.netlify.app/"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  class="btn"
+                >
+                  Live Demo
+                </a>
+                <a
+                  href="https://github.com/Deepakkumar9548/Data-Cleaning"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  class="btn btn-secondary"
+                >
+                  GitHub
+                </a>
+                <a href="#data-cleaning-breakdown" class="btn btn-secondary">
+                  Workflow Explained
+                </a>
+              </div>
+            </div>
+          </article>
+
+          <article class="project-card" data-category="workflow">
+            <img
+              src="images/ebr-consolidate.svg"
+              alt="EBR Consolidate Tool preview showing multiple EBR datasets merged into one structured view"
+              class="project-thumb"
+              loading="lazy"
+            />
+            <div class="project-body">
+              <span class="project-badge">Featured • Data Consolidation</span>
+              <h3>EBR Consolidate Tool</h3>
+              <p>
+                Web-based EBR consolidation tool built to combine, organize, and prepare EBR datasets into a structured
+                reporting view.
+              </p>
+              <div class="project-tags">
+                <span>EBR Consolidation</span>
+                <span>Reporting</span>
+                <span>Web App</span>
+              </div>
+              <div class="project-links">
+                <a
+                  href="https://ebr-consolidate-tool.netlify.app/"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  class="btn"
+                >
+                  Live Demo
+                </a>
+                <a
+                  href="https://github.com/Deepakkumar9548/EBR-Consolidate-Tool"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  class="btn btn-secondary"
+                >
+                  GitHub
+                </a>
+              </div>
+            </div>
+          </article>
+
+          <article class="project-card" data-category="reporting">
+            <img
+              src="images/sales-audit-mis.svg"
+              alt="Sales & After-Sales Audit MIS Dashboards preview with Power BI KPIs and compliance charts"
+              class="project-thumb"
+              loading="lazy"
+            />
+            <div class="project-body">
+              <span class="project-badge">AVA Global Alliance • Analytics &amp; Audit</span>
+              <h3>Sales &amp; After-Sales Audit MIS Dashboards</h3>
+              <p>
+                Built automated MIS reports and Power BI / Excel / Google Sheets dashboards to monitor dealership audits,
+                inventory verification, discount leakage, commission calculations, and team KPIs.
+              </p>
+              <div class="project-tags">
+                <span>Power BI</span>
+                <span>SQL (MySQL)</span>
+                <span>Advanced Excel</span>
+                <span>MIS Reporting</span>
+              </div>
+              <div class="project-links">
+                <button type="button" class="btn case-study-btn" data-case="sales-audit">View Case Study</button>
+              </div>
+            </div>
+          </article>
+
+          <article class="project-card" data-category="workflow">
+            <img
+              src="images/google-sheets-ppt.svg"
+              alt="Automated Google Sheets & PPT Workflows preview showing Apps Script automation into management slides"
+              class="project-thumb"
+              loading="lazy"
+            />
+            <div class="project-body">
+              <span class="project-badge">AVA Global Alliance • Automation</span>
+              <h3>Automated Google Sheets &amp; PPT Workflows</h3>
+              <p>
+                Developed Google Apps Script automations to streamline business processes, reduce manual effort, maintain
+                accurate project price lists, and generate automated PPT &amp; MIS management reports.
+              </p>
+              <div class="project-tags">
+                <span>Google Apps Script</span>
+                <span>Google Sheets</span>
+                <span>Automated PPT</span>
+                <span>Data Accuracy</span>
+              </div>
+              <div class="project-links">
+                <a
+                  href="https://docs.google.com/spreadsheets/d/1tnLQ2Wfta2dnkbdS8GAkd81BRdyDZGx-iC4YAuDKxIM/edit?gid=817482066#gid=817482066"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  class="btn"
+                >
+                  Open Google Sheet
+                </a>
+                <button type="button" class="btn btn-secondary case-study-btn" data-case="sheets-automation">View Case Study</button>
+              </div>
+            </div>
+          </article>
+
+          <article class="project-card" data-category="reporting">
+            <img
+              src="images/nps-operations.svg"
+              alt="NPS Management Audits & Operations Tracking preview showing onboarding target and escalation KPIs"
+              class="project-thumb"
+              loading="lazy"
+            />
+            <div class="project-body">
+              <span class="project-badge">IEnergizer &amp; Urban Company • Operations</span>
+              <h3>NPS Management Audits &amp; Operations Tracking</h3>
+              <p>
+                Conducted NPS Management Audits, tracked daily installation &amp; pending-case MIS reports, coordinated
+                field/carpenter logistics, and achieved 3 daily office walk-in onboardings.
+              </p>
+              <div class="project-tags">
+                <span>NPS Audits</span>
+                <span>KPI Monitoring</span>
+                <span>RCA</span>
+                <span>Daily MIS</span>
+              </div>
+              <div class="project-links">
+                <button type="button" class="btn case-study-btn" data-case="nps-ops">View Case Study</button>
+              </div>
+            </div>
+          </article>
+
+          <article class="project-card" data-category="workflow">
+            <img
+              src="images/portfolio-preview.svg"
+              alt="Portfolio Website dark mode and layout preview"
+              class="project-thumb"
+              loading="lazy"
+            />
+            <div class="project-body">
+              <span class="project-badge">Web Development</span>
+              <h3>Portfolio Website</h3>
+              <p>Personal portfolio website showcasing data analytics work, audit experience, resume, and contact info.</p>
+              <div class="project-tags">
+                <span>HTML</span>
+                <span>CSS</span>
+                <span>JavaScript</span>
+              </div>
+              <div class="project-links">
+                <a href="#hero" class="btn">Live Demo</a>
+                <a
+                  href="https://github.com/Deepakkumar9548/my-portfolio"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  class="btn btn-secondary"
+                >
+                  GitHub
+                </a>
+              </div>
+            </div>
+          </article>
+
+        </div>
+      </div>
+    </section>
+
+    <section id="reports" data-aos="fade-up">
+      <div class="container">
+        <h2>Reports &amp; Insights I Deliver</h2>
+        <p class="section-subtitle">
+          From daily operational MIS trackers to executive audit summaries and automated Power BI dashboards, here are
+          the reports I can extract, analyze, and automate for business teams.
+        </p>
+
+        <div class="report-workflow" aria-label="Reporting workflow">
+          <div class="workflow-step">
+            <span class="workflow-num">1</span>
+            <div>
+              <strong>Data Cleaning &amp; Extraction</strong>
+              <p>Consolidate and validate raw operational data using Advanced Excel, Google Sheets, and SQL (MySQL).</p>
+            </div>
+          </div>
+          <div class="workflow-step">
+            <span class="workflow-num">2</span>
+            <div>
+              <strong>Audit, KPI &amp; RCA Modeling</strong>
+              <p>Spot discrepancies, track KPIs, and run Root Cause Analysis (RCA) across sales and service funnels.</p>
+            </div>
+          </div>
+          <div class="workflow-step">
+            <span class="workflow-num">3</span>
+            <div>
+              <strong>Automated Delivery</strong>
+              <p>Generate interactive Power BI dashboards, automated Google Sheets reports, and executive PPT decks.</p>
+            </div>
           </div>
         </div>
 
-        <div class="project-card">
-          <img src="images/portfolio.png" alt="Portfolio Site">
-          <h3>Portfolio Website</h3>
-          <p>Personal portfolio website to showcase my skills, resume, and contact info.</p>
-          <div class="project-links">
-            <a href="#" class="btn">Live Demo</a>
-            <a href="#" class="btn">GitHub</a>
+        <div class="reports-grid">
+
+          <article class="report-card">
+            <div class="report-card-head">
+              <i class="fa-solid fa-table-list" aria-hidden="true"></i>
+              <h3>MIS Reports (Daily / Weekly / Monthly)</h3>
+            </div>
+            <p>
+              Structured operational trackers covering target-vs-actual performance, installation status, pending cases,
+              and team productivity summaries.
+            </p>
+            <div class="report-tools">
+              <span>Advanced Excel</span>
+              <span>Google Sheets</span>
+              <span>SQL (MySQL)</span>
+            </div>
+          </article>
+
+          <article class="report-card">
+            <div class="report-card-head">
+              <i class="fa-solid fa-magnifying-glass-dollar" aria-hidden="true"></i>
+              <h3>Sales &amp; After-Sales Audit Reports</h3>
+            </div>
+            <p>
+              End-to-end dealership and sales audit reports highlighting discount leakage, commission calculation checks,
+              and process compliance gaps.
+            </p>
+            <div class="report-tools">
+              <span>Data Auditing</span>
+              <span>Advanced Excel</span>
+              <span>SQL</span>
+            </div>
+          </article>
+
+          <article class="report-card">
+            <div class="report-card-head">
+              <i class="fa-solid fa-chart-column" aria-hidden="true"></i>
+              <h3>Executive Power BI &amp; KPI Dashboards</h3>
+            </div>
+            <p>
+              Interactive visual dashboards built with DAX and data modeling so leadership can monitor real-time KPIs,
+              trends, and conversion metrics at a glance.
+            </p>
+            <div class="report-tools">
+              <span>Power BI (DAX)</span>
+              <span>Tableau</span>
+              <span>Data Modeling</span>
+            </div>
+          </article>
+
+          <article class="report-card">
+            <div class="report-card-head">
+              <i class="fa-solid fa-boxes-stacked" aria-hidden="true"></i>
+              <h3>Inventory &amp; Price List Verification Reports</h3>
+            </div>
+            <p>
+              Discrepancy and variance reports for inventory reconciliation, stock audits, and maintaining accurate
+              project price lists.
+            </p>
+            <div class="report-tools">
+              <span>Pivot Tables</span>
+              <span>Formulas</span>
+              <span>SQL Queries</span>
+            </div>
+          </article>
+
+          <article class="report-card">
+            <div class="report-card-head">
+              <i class="fa-solid fa-star-half-stroke" aria-hidden="true"></i>
+              <h3>NPS &amp; Service Quality Audit Reports</h3>
+            </div>
+            <p>
+              Customer satisfaction (NPS) audit summaries, escalation turnaround reports, onboarding SLA tracking, and
+              Root Cause Analysis (RCA) breakdowns.
+            </p>
+            <div class="report-tools">
+              <span>NPS Audits</span>
+              <span>RCA</span>
+              <span>KPI Tracking</span>
+            </div>
+          </article>
+
+          <article class="report-card">
+            <div class="report-card-head">
+              <i class="fa-solid fa-file-powerpoint" aria-hidden="true"></i>
+              <h3>Automated Reports &amp; Executive PPTs</h3>
+            </div>
+            <p>
+              Automated Team Lead reporting, scheduled MIS report generation, and presentation-ready management PPT
+              decks using scripts and templates.
+            </p>
+            <div class="report-tools">
+              <span>Google Apps Script</span>
+              <span>PowerPoint</span>
+              <span>Daily TL Report Generator</span>
+            </div>
+          </article>
+
+        </div>
+
+        <div id="tool-breakdowns" class="tool-breakdowns">
+          <div class="tool-breakdowns-header">
+            <h3>Interactive Tool Breakdown Explorer</h3>
+            <p>Select a tool below to inspect its automated reports, workflow steps, and modules.</p>
+          </div>
+          <div class="breakdown-tabs" role="tablist" aria-label="Tool breakdown switcher">
+            <button type="button" class="breakdown-tab is-active" data-breakdown="tl-report-breakdown" role="tab" aria-selected="true">Daily TL Report Generator</button>
+            <button type="button" class="breakdown-tab" data-breakdown="ndc-portal-breakdown" role="tab" aria-selected="false">NDC Portal (India)</button>
+            <button type="button" class="breakdown-tab" data-breakdown="mis-tool-breakdown" role="tab" aria-selected="false">Daily MIS &amp; Weekly Report</button>
+            <button type="button" class="breakdown-tab" data-breakdown="data-cleaning-breakdown" role="tab" aria-selected="false">Data Cleaning Tool</button>
+          </div>
+
+        <div id="tl-report-breakdown" class="tl-breakdown is-active" role="tabpanel">
+          <div class="tl-breakdown-head">
+            <div>
+              <span class="project-badge">Live Tool Breakdown</span>
+              <h3>Daily TL Report Generator — Automated Reports Explained</h3>
+              <p>
+                Built to turn raw row data into structured daily audit &amp; operations reports automatically
+                (<em>Mapping · Payment verification · Row data, generated automatically</em>):
+              </p>
+            </div>
+            <a
+              href="https://tl-report-autogenerator.netlify.app/"
+              target="_blank"
+              rel="noopener noreferrer"
+              class="btn"
+            >
+              Open Live App
+            </a>
+          </div>
+
+          <div class="tl-modules-grid">
+            <div class="tl-module">
+              <h4><i class="fa-solid fa-chart-line" aria-hidden="true"></i> Dashboard</h4>
+              <p>Consolidated daily summary view of mapped row data, key totals, and operational KPIs at a glance.</p>
+            </div>
+            <div class="tl-module">
+              <h4><i class="fa-solid fa-square-check" aria-hidden="true"></i> Payment verification</h4>
+              <p>Automated payment-mapping and verification report to validate transactions and flag mismatches.</p>
+            </div>
+            <div class="tl-module">
+              <h4><i class="fa-solid fa-box-open" aria-hidden="true"></i> Monthly orders</h4>
+              <p>Month-wise order tracking and consolidated volume summary generated directly from raw order rows.</p>
+            </div>
+            <div class="tl-module">
+              <h4><i class="fa-solid fa-triangle-exclamation" aria-hidden="true"></i> Sent back</h4>
+              <p>Exception report isolating sent-back, returned, or discrepant entries that need follow-up or correction.</p>
+            </div>
+            <div class="tl-module">
+              <h4><i class="fa-solid fa-magnifying-glass" aria-hidden="true"></i> Data explorer</h4>
+              <p>Interactive row-level inspection view to search, filter, and audit individual mapped records.</p>
+            </div>
+            <div class="tl-module">
+              <h4><i class="fa-solid fa-file-lines" aria-hidden="true"></i> PC File Status</h4>
+              <p>Tracking report showing file processing and PC file status across daily operations.</p>
+            </div>
+            <div class="tl-module">
+              <h4><i class="fa-solid fa-clock-rotate-left" aria-hidden="true"></i> History</h4>
+              <p>Audit log of previously generated reports and past verification runs for quick reference.</p>
+            </div>
           </div>
         </div>
 
-        <div class="project-card">
-          <img src="images/youtube-clone.png" alt="YouTube Clone">
-          <h3>YouTube Clone</h3>
-          <p>Responsive clone of YouTube with basic video playback layout and UI elements.</p>
-          <div class="project-links">
-            <a href="#" class="btn">Live Demo</a>
-            <a href="#" class="btn">GitHub</a>
+        <div id="ndc-portal-breakdown" class="tl-breakdown" role="tabpanel">
+          <div class="tl-breakdown-head">
+            <div>
+              <span class="project-badge">Live Tool Breakdown</span>
+              <h3>Business Workflow NDC Portal (India) — Workflow &amp; Reports Explained</h3>
+              <p>
+                <em>No Dues Certificate cum Customer Confirmation</em> portal automating dealership KYC verification,
+                OEM vs. Franchise billing reconciliation, and Excel-ready NDC record tracking:
+              </p>
+            </div>
+            <a
+              href="https://business-workflow-ndc-portal-india.netlify.app/"
+              target="_blank"
+              rel="noopener noreferrer"
+              class="btn"
+            >
+              Open Live App
+            </a>
+          </div>
+
+          <div class="tl-modules-grid">
+            <div class="tl-module">
+              <h4><i class="fa-solid fa-user-check" aria-hidden="true"></i> 1. Customer Details</h4>
+              <p>Validated KYC (Name, Mobile, Email, Aadhaar, PAN, conditional GST), SC/DMS IDs, Deal Source, and Delivery Type.</p>
+            </div>
+            <div class="tl-module">
+              <h4><i class="fa-solid fa-car" aria-hidden="true"></i> 2. Vehicle Details</h4>
+              <p>Model, Variant, Colour, 17-char VIN/Chassis No., Registration, Fuel, Insurance, Finance Type, and Exchange trigger.</p>
+            </div>
+            <div class="tl-module">
+              <h4><i class="fa-solid fa-repeat" aria-hidden="true"></i> 3. Exchange Vehicle</h4>
+              <p>Conditional section tracking Old Car Reg No., Make/Year, Exchange Consideration, Refund, and auto-calculated Total.</p>
+            </div>
+            <div class="tl-module">
+              <h4><i class="fa-solid fa-building-columns" aria-hidden="true"></i> 4. Finance Details</h4>
+              <p>Auto-synced Finance Type from Vehicle Details, conditionally enabling Bank Name and Finance Amount when financed.</p>
+            </div>
+            <div class="tl-module">
+              <h4><i class="fa-solid fa-file-invoice-dollar" aria-hidden="true"></i> 5. Billing (Part A &amp; Part B)</h4>
+              <p>Live Part A (Ex-showroom, OEM/Month Offers, TCS, Total Discount) + Part B (Road Tax, Insurance, Accessories, VAS, Choice No.) into Grand Total.</p>
+            </div>
+            <div class="tl-module">
+              <h4><i class="fa-solid fa-money-check-dollar" aria-hidden="true"></i> 6. Payment &amp; Balance</h4>
+              <p>Mode-wise receipts (Cash, Cheque, Online, Bank DO, PO, Trade Value, Refund) with real-time Total Received &amp; balance status.</p>
+            </div>
+            <div class="tl-module">
+              <h4><i class="fa-solid fa-table" aria-hidden="true"></i> All Records &amp; Excel Export</h4>
+              <p>Draft &amp; Submitted NDC records table with KPI cards, search/status filters, .xlsx import, Print, and Export All to Excel.</p>
+            </div>
           </div>
         </div>
 
-      </div>
-    </div>
-  </section>
+        <div id="mis-tool-breakdown" class="tl-breakdown" role="tabpanel">
+          <div class="tl-breakdown-head">
+            <div>
+              <span class="project-badge">Live Tool Breakdown</span>
+              <h3>Daily MIS &amp; Weekly Report Tool — Modules &amp; Reports Explained</h3>
+              <p>
+                Multi-module dealership audit, reconciliation, and MIS reporting suite supporting PV, CV &amp; EV
+                datasets with interactive pivots, ExcelJS/XLSX exports, and automated checks:
+              </p>
+            </div>
+            <a
+              href="https://daily-mis-report.netlify.app/"
+              target="_blank"
+              rel="noopener noreferrer"
+              class="btn"
+            >
+              Open Live App
+            </a>
+          </div>
 
-  <!-- ✅ RESUME SECTION -->
-  <section id="resume">
-    <div class="container">
-      <h2>My Resume</h2>
-      <div class="resume-box">
-        <iframe src="resume/Deepak-Resume.pdf" width="100%" height="500px"></iframe>
-        <div class="resume-actions">
-          <button onclick="uploadResume()">Upload New</button>
-          <button onclick="editResume()">Edit</button>
-          <button onclick="deleteResume()">Delete</button>
+          <div class="tl-modules-grid">
+            <div class="tl-module">
+              <h4><i class="fa-solid fa-clipboard-list" aria-hidden="true"></i> Extractor</h4>
+              <p>Load PV/CV/EV files or paste Excel rows to inspect Std vs. Actual build-ups, record Audit Decisions (Breach / No Breach / Pending), and export Deal Sheet PNG, Excel, or PDF.</p>
+            </div>
+            <div class="tl-module">
+              <h4><i class="fa-solid fa-magnifying-glass" aria-hidden="true"></i> Auto Audit</h4>
+              <p>Runs automated checks for net deal shortfalls, excess discounts, payment issues, missing docs, and process violations with multi-select slicers and drill-down pivots.</p>
+            </div>
+            <div class="tl-module">
+              <h4><i class="fa-solid fa-chart-line" aria-hidden="true"></i> Performance</h4>
+              <p>TL Performance Dashboard with daily targets, KPI strip, Critical Alerts, TL Scorecards, Deal Type &amp; Sent Back heatmaps, missed breach tracking, and 30-day review trends.</p>
+            </div>
+            <div class="tl-module">
+              <h4><i class="fa-solid fa-compass" aria-hidden="true"></i> Analysis</h4>
+              <p>Multi-slicer booking drill-down with numeric range filters, 2×2 multi-value Pivot Table, custom Formula Builder, and Pin to Dashboard support.</p>
+            </div>
+            <div class="tl-module">
+              <h4><i class="fa-solid fa-arrows-rotate" aria-hidden="true"></i> Reconciliation</h4>
+              <p>Cross-matches 2 or 3 files using Reco Presets and up to 2 match-key sets per file to spot missing records, value mismatches, and custom bucket remarks.</p>
+            </div>
+            <div class="tl-module">
+              <h4><i class="fa-solid fa-bullseye" aria-hidden="true"></i> Free Pivot</h4>
+              <p>Upload any .xlsx/.csv file, preview rows, and build custom 2-row × 2-column multi-value pivots with custom formulas and Excel export.</p>
+            </div>
+            <div class="tl-module">
+              <h4><i class="fa-solid fa-building" aria-hidden="true"></i> Dealership Report</h4>
+              <p>Dealership-wise Std vs. Actual booking reports with PV/CV Payment Tracker mapping, Audit Dashboard exports, per-dealer ZIP packs, and Combined Reports.</p>
+            </div>
+            <div class="tl-module">
+              <h4><i class="fa-solid fa-chart-column" aria-hidden="true"></i> Dashboard</h4>
+              <p>Consolidates pinned pivot snapshots from Analysis and Free Pivot into an executive view with editable title, Print/PDF, and Excel export.</p>
+            </div>
+            <div class="tl-module">
+              <h4><i class="fa-solid fa-key" aria-hidden="true"></i> Keyword Extractor</h4>
+              <p>Extracts vehicle reg numbers (with match remarks), chassis numbers, payer names, mobiles, amounts, UTR, IFSC, UPI IDs, and regex/split fields from narrations.</p>
+            </div>
+            <div class="tl-module">
+              <h4><i class="fa-solid fa-code-merge" aria-hidden="true"></i> File Merger</h4>
+              <p>Appends rows across multiple files with XLOOKUP-style column mapping or VLOOKUP-style key merges, per-file remarks, and column-selected .xlsx export.</p>
+            </div>
+            <div class="tl-module">
+              <h4><i class="fa-solid fa-calendar-days" aria-hidden="true"></i> Monthly Working &amp; OEM Comparison</h4>
+              <p>Dedicated Monthly Working and OEM Comparison modules included in the reporting suite alongside the core audit and MIS views.</p>
+            </div>
+          </div>
+        </div>
+
+        <div id="data-cleaning-breakdown" class="tl-breakdown" role="tabpanel">
+          <div class="tl-breakdown-head">
+            <div>
+              <span class="project-badge">Live Tool Breakdown</span>
+              <h3>Data Cleaning Tool — Workflow &amp; Purpose Explained</h3>
+              <p>
+                Built to turn messy, unformatted datasets into clean, structured records before running MIS reports,
+                audits, or BI dashboards:
+              </p>
+            </div>
+            <a
+              href="https://datacleaning-tool.netlify.app/"
+              target="_blank"
+              rel="noopener noreferrer"
+              class="btn"
+            >
+              Open Live App
+            </a>
+          </div>
+
+          <div class="tl-modules-grid">
+            <div class="tl-module">
+              <h4><i class="fa-solid fa-file-import" aria-hidden="true"></i> 1. Raw Data Input</h4>
+              <p>Accepts raw, uncleaned tabular data containing inconsistent text, extra spaces, or mixed formatting.</p>
+            </div>
+            <div class="tl-module">
+              <h4><i class="fa-solid fa-broom" aria-hidden="true"></i> 2. Standardize &amp; Clean</h4>
+              <p>Normalizes text formatting, trims noisy whitespace, and aligns inconsistent entries across records.</p>
+            </div>
+            <div class="tl-module">
+              <h4><i class="fa-solid fa-filter-circle-xmark" aria-hidden="true"></i> 3. Quality &amp; Anomaly Checks</h4>
+              <p>Helps surface blanks, duplicates, and formatting errors early before pivot tables or SQL imports break.</p>
+            </div>
+            <div class="tl-module">
+              <h4><i class="fa-solid fa-file-export" aria-hidden="true"></i> 4. Reporting-Ready Output</h4>
+              <p>Produces clean, analysis-ready datasets suited for Excel MIS tracking, Power BI modeling, and audit workflows.</p>
+            </div>
+          </div>
+        </div>
+        </div>
+
+        <div id="sample-dashboard" class="sample-dashboard">
+          <div class="sample-dash-head">
+            <div>
+              <span class="project-badge">Interactive Sample MIS Preview</span>
+              <h3>Audit &amp; Operations KPI Dashboard (Demo Data)</h3>
+              <p>Illustrative sample metrics showing how I structure interactive KPI slicing and compliance views.</p>
+            </div>
+            <div class="dash-filters" role="group" aria-label="Filter sample dashboard by channel">
+              <button type="button" class="dash-filter is-active" data-channel="all" aria-pressed="true">All Channels</button>
+              <button type="button" class="dash-filter" data-channel="sales" aria-pressed="false">Sales Audit</button>
+              <button type="button" class="dash-filter" data-channel="aftersales" aria-pressed="false">After-Sales</button>
+              <button type="button" class="dash-filter" data-channel="onboarding" aria-pressed="false">Onboarding &amp; NPS</button>
+            </div>
+          </div>
+
+          <div class="dash-kpis">
+            <div class="dash-kpi">
+              <span class="dash-kpi-label">Records Audited</span>
+              <strong id="dash-kpi-records">1,480</strong>
+            </div>
+            <div class="dash-kpi">
+              <span class="dash-kpi-label">Discrepancies Flagged</span>
+              <strong id="dash-kpi-flagged">64</strong>
+            </div>
+            <div class="dash-kpi">
+              <span class="dash-kpi-label">Compliance Rate</span>
+              <strong id="dash-kpi-compliance">95.7%</strong>
+            </div>
+            <div class="dash-kpi">
+              <span class="dash-kpi-label">Avg. Turnaround</span>
+              <strong id="dash-kpi-tat">4.2 hrs</strong>
+            </div>
+          </div>
+
+          <div class="dash-bars" id="dash-bars" aria-label="Category audit compliance breakdown"></div>
         </div>
       </div>
-    </div>
-  </section>
+    </section>
 
-  <!-- ✅ TOOLS SECTION -->
-  <section id="tools">
-    <div class="container">
-      <h2>Tools I Use</h2>
-      <div class="tools-grid">
-        <img src="images/vscode.png" alt="VS Code">
-        <img src="images/git.png" alt="Git">
-        <img src="images/mysql.png" alt="MySQL">
-        <!-- Add more tools as needed -->
+    <section id="education" data-aos="fade-up">
+      <div class="container">
+        <h2>Education &amp; Languages</h2>
+        <div class="credentials-grid">
+          <article class="credential-card">
+            <h3><i class="fa-solid fa-graduation-cap" aria-hidden="true"></i> Education</h3>
+            <ul class="credential-list">
+              <li>
+                <strong>B.Tech – Computer Science &amp; Engineering</strong>
+                <span class="credential-meta">Dr. A.P.J. Abdul Kalam Technical University, Lucknow • VCTM, Aligarh</span>
+                <p>Aug 2020 – Jul 2024 • SGPA: 7.4</p>
+              </li>
+              <li>
+                <strong>Intermediate (PCM) — UP Board</strong>
+                <span class="credential-meta">2019 – 2020 • 52%</span>
+              </li>
+              <li>
+                <strong>Class 10 — UP Board</strong>
+                <span class="credential-meta">2018 – 2019 • 62%</span>
+              </li>
+            </ul>
+          </article>
+
+          <article class="credential-card">
+            <h3><i class="fa-solid fa-toolbox" aria-hidden="true"></i> Core Tools &amp; Languages</h3>
+            <ul class="credential-list">
+              <li>
+                <strong>Analytics &amp; BI Stack</strong>
+                <span class="credential-meta">Advanced Excel, SQL (MySQL), Power BI (DAX &amp; Modeling), Tableau</span>
+              </li>
+              <li>
+                <strong>Automation &amp; AI Productivity</strong>
+                <span class="credential-meta">Google Apps Script, Google Sheets, PowerPoint, ChatGPT, Claude AI, Gemini, Copilot, Perplexity</span>
+              </li>
+              <li>
+                <strong>Languages Known</strong>
+                <span class="credential-meta">Hindi, English</span>
+              </li>
+            </ul>
+          </article>
+        </div>
       </div>
-    </div>
-  </section>
+    </section>
 
-  <!-- ✅ CONTACT SECTION -->
-  <!-- <section id="contact">
-    <div class="container">
-      <h2>Contact Me</h2>
-      <form>
-        <input type="text" placeholder="Your Name" required>
-        <input type="email" placeholder="Your Email" required>
-        <textarea placeholder="Your Message"></textarea>
-        <button type="submit" class="btn">Send Message</button>
-      </form>
-    </div>
-  </section> -->
-
-<!-- 
-  1. HTML (Contact Us Section)
-Add the Contact Us section after your existing sections, like this: -->
-
-
-
-<!-- Contact Us Section -->
-<section id="contact">
-  <div class="container">
-      <h2>Contact Me</h2>
-      <div class="contact-form">
-          <form id="contact-form" action="mailto:your-email@example.com" method="POST" enctype="text/plain">
-              <div class="form-group">
-                  <label for="name">Name</label>
-                  <input type="text" id="name" name="name" placeholder="Your Name" required>
-              </div>
-              <div class="form-group">
-                  <label for="email">Email</label>
-                  <input type="email" id="email" name="email" placeholder="Your Email" required>
-              </div>
-              <div class="form-group">
-                  <label for="message">Message</label>
-                  <textarea id="message" name="message" rows="4" placeholder="Your Message" required></textarea>
-              </div>
-              <button type="submit" class="btn">Send Message</button>
-          </form>
+    <section id="resume" data-aos="fade-up">
+      <div class="container">
+        <h2>My Resume</h2>
+        <div class="resume-box">
+          <iframe
+            src="resume/Deepak-Resume.pdf"
+            title="Deepak Kumar Resume PDF"
+            loading="lazy"
+          ></iframe>
+          <div class="resume-actions">
+            <a href="resume/Deepak-Resume.pdf" target="_blank" rel="noopener noreferrer" class="btn">
+              <i class="fa-solid fa-arrow-up-right-from-square" aria-hidden="true"></i> Open Full Screen
+            </a>
+            <a href="resume/Deepak-Resume.pdf" download class="btn btn-secondary">
+              <i class="fa-solid fa-download" aria-hidden="true"></i> Download PDF
+            </a>
+          </div>
+        </div>
       </div>
-  </div>
-</section>
+    </section>
 
-
-
-
-<!-- 
-2. Testimonials Section
-Display client or teammate quotes to build trust and credibility.
-<-- Testimonials Section -->
-<section id="testimonials">
-  <h2>What Clients/Teammates Say</h2>
-  <div class="testimonials-container">
-      <div class="testimonial-card">
-          <p>"Deepak is a reliable and highly skilled developer. His work on the project was exceptional!"</p>
-          <h4>John Doe</h4>
-          <p>Project Manager at XYZ Company</p>
+    <section id="tools" data-aos="fade-up">
+      <div class="container">
+        <h2>Tools I Use</h2>
+        <div class="tools-grid">
+          <div class="tool-card">
+            <i class="fa-solid fa-file-excel" aria-hidden="true"></i>
+            <span>Advanced Excel</span>
+          </div>
+          <div class="tool-card">
+            <i class="fa-solid fa-database" aria-hidden="true"></i>
+            <span>SQL (MySQL)</span>
+          </div>
+          <div class="tool-card">
+            <i class="fa-solid fa-chart-column" aria-hidden="true"></i>
+            <span>Power BI</span>
+          </div>
+          <div class="tool-card">
+            <i class="fa-solid fa-chart-area" aria-hidden="true"></i>
+            <span>Tableau</span>
+          </div>
+          <div class="tool-card">
+            <i class="fa-solid fa-table" aria-hidden="true"></i>
+            <span>Google Sheets</span>
+          </div>
+          <div class="tool-card">
+            <i class="fa-solid fa-file-powerpoint" aria-hidden="true"></i>
+            <span>PowerPoint</span>
+          </div>
+          <div class="tool-card">
+            <i class="fa-solid fa-robot" aria-hidden="true"></i>
+            <span>AI Tools</span>
+          </div>
+          <div class="tool-card">
+            <i class="fa-solid fa-code" aria-hidden="true"></i>
+            <span>VS Code &amp; Git</span>
+          </div>
+        </div>
       </div>
-      <div class="testimonial-card">
-          <p>"I appreciate Deepak's attention to detail and his problem-solving approach. Truly a great team player!"</p>
-          <h4>Jane Smith</h4>
-          <p>Frontend Developer at ABC Corp</p>
+    </section>
+
+    <!-- Add verified client or manager testimonials here when available -->
+
+    <section id="contact" data-aos="fade-up">
+      <div class="container">
+        <h2>Contact Me</h2>
+        <div class="contact-info-bar">
+          <a href="tel:9548645750" class="contact-chip">
+            <i class="fa-solid fa-phone" aria-hidden="true"></i> +91 9548645750
+          </a>
+          <a
+            href="https://wa.me/919548645750?text=Hi%20Deepak%2C%20I%20visited%20your%20portfolio%20and%20would%20like%20to%20connect."
+            target="_blank"
+            rel="noopener noreferrer"
+            class="contact-chip contact-chip--whatsapp"
+          >
+            <i class="fa-brands fa-whatsapp" aria-hidden="true"></i> WhatsApp: +91 9548645750
+          </a>
+          <a href="mailto:deepakchaudhary954864@gmail.com" class="contact-chip">
+            <i class="fa-solid fa-envelope" aria-hidden="true"></i> deepakchaudhary954864@gmail.com
+          </a>
+          <button type="button" id="copy-email-btn" class="contact-chip contact-chip-btn">
+            <i class="fa-regular fa-copy" aria-hidden="true"></i> Copy Email
+          </button>
+        </div>
+        <form
+          id="contact-form"
+          name="contact"
+          method="POST"
+          data-netlify="true"
+          netlify-honeypot="bot-field"
+          class="contact-form"
+          novalidate
+        >
+          <input type="hidden" name="form-name" value="contact" />
+          <p class="visually-hidden">
+            <label>Don’t fill this out if you’re human: <input name="bot-field" /></label>
+          </p>
+          <div class="form-group">
+            <label for="name">Name</label>
+            <input type="text" id="name" name="name" placeholder="Your Name" required />
+          </div>
+          <div class="form-group">
+            <label for="email">Email</label>
+            <input type="email" id="email" name="email" placeholder="Your Email" required />
+          </div>
+          <div class="form-group">
+            <label for="message">Message</label>
+            <textarea id="message" name="message" rows="4" placeholder="Your Message" required></textarea>
+          </div>
+          <div class="form-actions">
+            <button type="submit" class="btn btn-submit">
+              <i class="fa-solid fa-paper-plane" aria-hidden="true"></i> Send via Email
+            </button>
+            <button type="button" id="send-whatsapp-btn" class="btn btn-whatsapp">
+              <i class="fa-brands fa-whatsapp" aria-hidden="true"></i> Send on WhatsApp
+            </button>
+          </div>
+          <p id="form-status" class="form-status" role="status" aria-live="polite"></p>
+        </form>
       </div>
-  </div>
-</section>
+    </section>
+  </main>
 
-<!-- Example of animated section -->
-
-
-
-<!-- ✅ Step 3: Customize Animations
-You can use attributes like:
-
-data-aos="fade-up", fade-down, fade-left, zoom-in, flip-left,  data-aos ,etc.
-
-data-aos-delay="200" — delay in ms
-
-data-aos-duration="800" — animation time in ms-->
-
-
-<section data-aos="fade-up">
-  <h2>My Projects</h2>
-  <p>Details about projects...</p>
-</section>
-
-<section id="about" data-aos="fade-up">
-  <h2>About Me</h2>
-  <p data-aos="fade-left" data-aos-delay="100">I am a passionate developer...</p>
-</section>
-
-<div class="skill-card" data-aos="zoom-in" data-aos-delay="200">
-  React.js
-</div>
-
-
- <!-- 1. Add a Footer Section -->
-<!-- A footer provides useful links, social media icons, or additional contact information.
-
-HTML (Footer Section)
-Add this below your Contact Us section: -->
-
-<!-- Footer Section -->
-<footer>
-  <div class="footer-container">
-      <p>&copy; 2025 Deepak Kumar. All rights reserved.</p>
+  <footer>
+    <div class="footer-container">
+      <p>&copy; <span id="current-year">2026</span> Deepak Kumar. All rights reserved.</p>
       <div class="social-links">
-          <a href="https://www.linkedin.com/in/deepak-kumar" target="_blank" class="social-icon">
-              <img src="linkedin-icon.png" alt="LinkedIn">
-          </a>
-          <a href="https://github.com/deepakkumar" target="_blank" class="social-icon">
-              <img src="github-icon.png" alt="GitHub">
-          </a>
-          <a href="mailto:your-email@example.com" class="social-icon">
-              <img src="email-icon.png" alt="Email">
-          </a>
+        <a
+          href="https://www.linkedin.com/in/deepak-kumar9548/"
+          target="_blank"
+          rel="noopener noreferrer"
+          class="social-icon"
+          aria-label="LinkedIn profile"
+        >
+          <i class="fa-brands fa-linkedin-in" aria-hidden="true"></i>
+        </a>
+        <a
+          href="https://github.com/Deepakkumar9548"
+          target="_blank"
+          rel="noopener noreferrer"
+          class="social-icon"
+          aria-label="GitHub profile"
+        >
+          <i class="fa-brands fa-github" aria-hidden="true"></i>
+        </a>
+        <a
+          href="mailto:deepakchaudhary954864@gmail.com"
+          class="social-icon"
+          aria-label="Send email to Deepak Kumar"
+        >
+          <i class="fa-solid fa-envelope" aria-hidden="true"></i>
+        </a>
+        <a
+          href="tel:9548645750"
+          class="social-icon"
+          aria-label="Call Deepak Kumar"
+        >
+          <i class="fa-solid fa-phone" aria-hidden="true"></i>
+        </a>
+        <a
+          href="https://wa.me/919548645750?text=Hi%20Deepak%2C%20I%20visited%20your%20portfolio%20and%20would%20like%20to%20connect."
+          target="_blank"
+          rel="noopener noreferrer"
+          class="social-icon"
+          aria-label="Chat on WhatsApp"
+        >
+          <i class="fa-brands fa-whatsapp" aria-hidden="true"></i>
+        </a>
       </div>
-      <!-- Dark Mode Toggle Button -->
-      <button id="dark-mode-toggle" class="btn">🌙 Dark Mode</button>
-      
+    </div>
+  </footer>
+
+  <div id="case-study-modal" class="modal-backdrop" role="dialog" aria-modal="true" aria-labelledby="modal-title" hidden>
+    <div class="modal-card">
+      <button type="button" id="modal-close" class="modal-close" aria-label="Close case study details">
+        <i class="fa-solid fa-xmark" aria-hidden="true"></i>
+      </button>
+      <span id="modal-badge" class="project-badge"></span>
+      <h3 id="modal-title"></h3>
+      <p id="modal-summary" class="modal-summary"></p>
+      <div class="modal-story">
+        <div class="modal-story-box">
+          <h4><i class="fa-solid fa-circle-exclamation" aria-hidden="true"></i> Context &amp; Challenge</h4>
+          <p id="modal-problem"></p>
+        </div>
+        <div class="modal-story-box">
+          <h4><i class="fa-solid fa-gears" aria-hidden="true"></i> Approach &amp; Workflow</h4>
+          <p id="modal-approach"></p>
+        </div>
+      </div>
+      <div class="modal-block">
+        <h4>Key Responsibilities &amp; Deliverables</h4>
+        <ul id="modal-points" class="modal-points"></ul>
+      </div>
+      <div class="modal-block">
+        <h4>Reports &amp; Outputs Generated</h4>
+        <div id="modal-reports" class="project-tags"></div>
+      </div>
+      <div class="modal-block">
+        <h4>Tools &amp; Methods</h4>
+        <div id="modal-tools" class="project-tags"></div>
+      </div>
+      <div class="modal-actions">
+        <a href="#" id="modal-live-link" class="btn" target="_blank" rel="noopener noreferrer" hidden>Open Resource</a>
+        <a href="#experience" id="modal-exp-link" class="btn">View Experience Timeline</a>
+        <a href="#contact" id="modal-contact-link" class="btn btn-secondary">Discuss Similar Work</a>
+      </div>
+    </div>
   </div>
-</footer>
-<script src="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.js"></script>
-<script>
-  AOS.init();
-</script>
+
+  <button type="button" id="back-to-top" class="back-to-top" aria-label="Back to top">
+    <i class="fa-solid fa-arrow-up" aria-hidden="true"></i>
+  </button>
 </body>
 
 </html>

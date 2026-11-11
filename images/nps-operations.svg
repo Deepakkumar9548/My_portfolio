@@ -1,0 +1,36 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 360" width="640" height="360">
+  <defs>
+    <linearGradient id="bg8" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#3730a3"/>
+      <stop offset="100%" stop-color="#6366f1"/>
+    </linearGradient>
+  </defs>
+  <rect width="640" height="360" fill="url(#bg8)"/>
+  <rect x="28" y="24" width="584" height="312" rx="14" fill="#ffffff" opacity="0.98"/>
+  <text x="48" y="58" font-family="sans-serif" font-size="15" font-weight="700" fill="#0f172a">NPS Management Audits &amp; Operations MIS</text>
+  <text x="48" y="76" font-family="sans-serif" font-size="10.5" fill="#64748b">IEnergizer &amp; Urban Company · Service Quality, Onboarding &amp; Escalations</text>
+  <!-- Left metrics -->
+  <rect x="48" y="96" width="260" height="100" rx="12" fill="#eef2ff" stroke="#c7d2fe"/>
+  <text x="66" y="122" font-family="sans-serif" font-size="10" font-weight="700" fill="#4338ca">WALK-IN ONBOARDING TARGET</text>
+  <text x="66" y="160" font-family="sans-serif" font-size="28" font-weight="700" fill="#1e1b4b">3 / Day</text>
+  <text x="66" y="180" font-family="sans-serif" font-size="10" fill="#4338ca">Wall &amp; PVC Panel Coordination</text>
+  <rect x="48" y="210" width="260" height="104" rx="12" fill="#ecfdf5" stroke="#a7f3d0"/>
+  <text x="66" y="236" font-family="sans-serif" font-size="10" font-weight="700" fill="#047857">RO ESCALATION &amp; INSTALLATIONS</text>
+  <text x="66" y="272" font-family="sans-serif" font-size="22" font-weight="700" fill="#064e3b">Daily MIS Tracked</text>
+  <text x="66" y="294" font-family="sans-serif" font-size="10" fill="#047857">Field Partner &amp; Pending Case Control</text>
+  <!-- Right workflow bars -->
+  <rect x="326" y="96" width="266" height="218" rx="12" fill="#f8fafc" stroke="#e2e8f0"/>
+  <text x="344" y="122" font-family="sans-serif" font-size="11.5" font-weight="700" fill="#0f172a">Operations Checklist</text>
+  <text x="344" y="152" font-family="sans-serif" font-size="10" fill="#334155">NPS Management Audit</text>
+  <rect x="344" y="160" width="230" height="10" rx="5" fill="#e2e8f0"/>
+  <rect x="344" y="160" width="215" height="10" rx="5" fill="#4f46e5"/>
+  <text x="344" y="196" font-family="sans-serif" font-size="10" fill="#334155">Materials &amp; Manpower Logistics</text>
+  <rect x="344" y="204" width="230" height="10" rx="5" fill="#e2e8f0"/>
+  <rect x="344" y="204" width="205" height="10" rx="5" fill="#0ea5e9"/>
+  <text x="344" y="240" font-family="sans-serif" font-size="10" fill="#334155">Urgent Escalation Turnaround</text>
+  <rect x="344" y="248" width="230" height="10" rx="5" fill="#e2e8f0"/>
+  <rect x="344" y="248" width="220" height="10" rx="5" fill="#10b981"/>
+  <text x="344" y="284" font-family="sans-serif" font-size="10" fill="#334155">Root Cause Analysis (RCA)</text>
+  <rect x="344" y="292" width="230" height="10" rx="5" fill="#e2e8f0"/>
+  <rect x="344" y="292" width="210" height="10" rx="5" fill="#f59e0b"/>
+</svg>
